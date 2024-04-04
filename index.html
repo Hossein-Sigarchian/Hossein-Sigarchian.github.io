@@ -2,39 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossein Sigarchian</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index-css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SediArt</title>
+  <link id="favicon-img" rel="icon" type="image/x-icon" href="images/no-watermark/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row bg-success-subtle mt-5 rounded-5">
-            <div class="col-12 d-flex justify-content-center">
-                <h3 class="p-2 pe-5 m-5 text-danger"><a href="pages/Samsung.html">Exercise 1</a></h3>
-                <h3 class="p-2 ps-5 m-5 text-danger"><a href="pages/Chain-div.html">Exercise 2</a></h3>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <h3 class="p-2 pe-5 mb-5 text-danger"><a href="pages/personal-website-1.html">Personal Website 1</a>
-                </h3>
-            </div>
-        </div>
-    </div>
+  <svg id="fader"></svg>
+  <script src="js/fader.js"></script>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odio maxime, ipsa, repellendus ipsam nemo
-        dolorum nulla sequi, non harum deserunt. Ullam amet esse aperiam nihil rem alias quos, ipsa doloremque nisi
-        reprehenderit architecto sapiente dolorum delectus, non a pariatur! Harum corrupti sequi accusantium optio
-        labore distinctio et similique alias obcaecati quos quidem itaque nemo fugit architecto eveniet expedita
-        pariatur fugiat, repudiandae earum enim, cum, magni iusto nisi. Illum assumenda, nostrum corrupti ut, esse amet
-        quibusdam cum molestias quidem minus iusto ab ipsum, tempore perspiciatis eligendi voluptatibus quaerat? Sed
-        voluptates dicta ex eum quam non aliquam nulla voluptate vel quod?</p>
-    <img src="images/5.jpg" alt="">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent mt-0">
+      <div class="container-fluid nav-bar">
+        <a class="navbar-brand fst-italic" href="#">SediArt</a>
+        <button class="navbar-toggler me-3 me-sm-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link" href="pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link"
+                href="pages/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link"
+                href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar w-100 navbar-expand-lg navbar-dark z-2" id="scroller">
+      <div class="container-fluid nav-bar px-0">
+        <a class="navbar-brand position-fixed fst-italic z-3" href="#">SediArt</a>
+        <button class="navbar-toggler position-fixed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link" href="pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link"
+                href="pages/portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-semibold mx-lg-4 mx-xl-5 customized-nav-link"
+                href="pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="test"></div>
+    <section>
+      <div class="container mb-xl-5 pb-sm-5 under-header">
+        <div class="row pt-2 pt-xxl-4">
+          <div class="col-12 col-lg-10 offset-lg-1 d-flex align-items-center"><img class="w-100"
+            src="images/no-watermark/sample.png" alt=""></div>
+          </div>
+          <div class="col-12 pt-3 pb-5 me-lg-4 ms-lg-5 mb-2">
+            <p class="fs-1 text-center">"For me, drawing is all about being united with the flow of love."</p>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid pb-xl-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="w-100">
+              <img class="w-100" src="images/boarder vector 1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid mt-0 mt-lg-5 pt-2">
+        <div class="row py-5">
+          <div class="col-12 d-flex flex-wrap justify-content-center">
+            <div class="rounded-circle overflow-hidden mt-5 mt-lg-0 mx-5 shadow-sm img-parent">
+              <a href="pages/illustrations.html" class="position-relative d-block">
+                <img class="w-100" src="images/smaller-size/illustrations/photo_4965555254938676777_y.jpg" alt="">
+                <p class="center-hover-txt fs-1 fw-semibold">Illustrations</p>
+                <div class="position-absolute w-100 h-100 center-hover">
+                </div>
+              </a>
+            </div>
+            <div class="rounded-circle overflow-hidden mt-5 mt-lg-0 mx-5 shadow-sm img-parent">
+              <a href="pages/graphic-designs.html" class="position-relative h-100 d-block">
+                <img class="w-100" src="images/smaller-size/illustrations/balloons.jpg" alt="">
+                <p class="center-hover-txt fs-1 fw-semibold">Graphic Designs</p>
+                <div class="position-absolute w-100 h-100 center-hover">
+                </div>
+              </a>
+            </div>
+            <div class="rounded-circle overflow-hidden mt-5 mt-lg-0 mx-5 shadow-sm img-parent">
+              <a href="pages/contact.html" class="position-relative d-block">
+                <img class="w-100" src="images/smaller-size/illustrations/tree-pam.jpg" alt="">
+                <p class="center-hover-txt fs-1 fw-semibold">Workshops</p>
+                <div class="position-absolute w-100 h-100 center-hover">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container mb-lg-5 mt-5 pt-lg-4 pt-xxl-5">
+    <div class="row pb-1">
+      <div class="col-12 col-lg-12"><img class="w-100" src="images/boarder_5.png" alt=""></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container h-100 d-flex flex-column justify-content-end">
+      <div class="row pt-5 pb-1">
+        <div class="col-12 flex-wrap d-flex justify-content-center">
+          <a href="#"
+            class="d-flex justify-content-center align-items-center rounded-circle border mx-2 mx-sm-3 footer-circle">
+            <i class="fs-3 bi bi-facebook"></i>
+          </a>
+          <!-- <a href="#"
+                    class="d-flex justify-content-center align-items-center rounded-circle border mx-2 mx-sm-3 footer-circle">
+                    <i class="fs-3 bi bi-twitter-x"></i>
+                </a> -->
+          <a href="#"
+            class="d-flex justify-content-center align-items-center rounded-circle border mx-2 mx-sm-3 footer-circle">
+            <i class="fs-3 bi bi-instagram"></i>
+          </a>
+          <br>
+          <a href="#"
+            class="d-flex justify-content-center align-items-center rounded-circle border mx-2 mx-sm-3 footer-circle">
+            <i class="fs-3 bi bi-linkedin"></i>
+          </a>
+          <!-- <a href="#"
+                    class="d-flex justify-content-center align-items-center rounded-circle border mx-2 mx-sm-3 footer-circle">
+                    <i class="fs-3 bi bi-vimeo"></i>
+                </a> -->
+        </div>
+        <div class="col-12 mt-4 copy-right">
+          <div>
+            <p class="text-center text-secondary">Copyright <i class="text-secondary bi bi-c-circle"></i>
+              2024 | Hosein Sigarchian</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
