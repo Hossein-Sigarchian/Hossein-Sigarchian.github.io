@@ -26,18 +26,6 @@ body {
     padding: 0px 0px 20px 90px;
 }
 
-.navbar-brand {
-    color: rgb(235, 29, 29);
-    font-size: 42px;
-    margin-left: 110px;
-    letter-spacing: 3px;
-}
-
-.navbar-brand:hover,
-.navbar-brand:visited {
-    color: rgb(235, 29, 29);
-}
-
 .navbar-nav {
     margin-right: 80px;
 }
@@ -161,7 +149,7 @@ a:has(>.center-hover) {
 }
 
 footer i {
-    color: rgb(235, 29, 29);
+    color: #e77689;
 }
 
 footer i {
@@ -169,7 +157,7 @@ footer i {
 }
 
 footer a:hover i {
-    color: rgb(173, 37, 37);
+    color: #c95a6c;
 }
 
 .copy-right {
@@ -226,8 +214,11 @@ footer a:hover i {
         margin-left: -40px;
     }
     .navbar-brand {
-    font-size: 34px;
-    margin-left: 30px;
+        width: 170px !important;
+        margin: 0% 0% 0% 5% ;
+    }
+    #scrolling-logo {
+        width: 160px;
     }
     #scroller #navbarSupportedContent {
         top: 78px;
@@ -242,8 +233,11 @@ footer a:hover i {
 
 @media all and (min-width:576px) and (max-width:767px) {
     .navbar-brand {
-    font-size:34px;
-    margin-left: 50px;
+        width: 200px !important;
+        margin: 0 0 0 45px;
+    }
+    #scrolling-logo {
+        width: 180px;
     }
     #scroller #navbarSupportedContent {
         top: 78px;
@@ -257,12 +251,15 @@ footer a:hover i {
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
-    .navbar-brand {
-    font-size: 38px;
-    margin-left: 80px;
-    }
     #scroller #navbarSupportedContent {
         top: 78px;
+    }
+    .navbar-brand {
+        width: 220px !important;
+        margin: 0 0 0 45px;
+    }
+    #scrolling-logo {
+        width: 180px;
     }
     .center-hover-txt:hover {
         opacity: 1;
@@ -278,8 +275,14 @@ footer a:hover i {
 
 @media all and (min-width:992px) and (max-width:1199px) {
     .navbar-brand {
-        font-size: 38px;
-        margin-left: 75px;
+        width: 20% !important;
+        margin: 10px 0 0 45px;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 160px;
     }
     #navbarSupportedContent {
         width: fit-content;
@@ -293,10 +296,20 @@ footer a:hover i {
 }
 
 @media all and (min-width:1200px) and (max-width:1399px) {
-        #navbarSupportedContent {
+    #navbarSupportedContent {
         width: fit-content;
         top: 45px;
         right: 0;
+    }
+    .navbar-brand {
+        width: 18% !important;
+        margin: 10px 0 0 45px;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 170px;
     }
     .center-hover-txt:hover {
         opacity: 1;
@@ -305,10 +318,20 @@ footer a:hover i {
 }
 
 @media all and (min-width:1400px) {
-        #navbarSupportedContent {
+    #navbarSupportedContent {
         width: fit-content;
         top: 45px;
         right: 0;
+    }
+    .navbar-brand {
+        width: 18% !important;
+        margin: 10px 0 0 5%;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 200px;
     }
     .center-hover-txt:hover {
         opacity: 1;

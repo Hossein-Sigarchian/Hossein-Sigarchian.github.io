@@ -27,18 +27,6 @@ body {
     padding: 0px 0px 20px 90px;
 }
 
-.navbar-brand {
-    color: rgb(235, 29, 29);
-    font-size: 42px;
-    margin-left: 110px;
-    letter-spacing: 3px;
-}
-
-.navbar-brand:hover,
-.navbar-brand:visited {
-    color: rgb(235, 29, 29);
-}
-
 .navbar-nav {
     margin-right: 80px;
 }
@@ -122,7 +110,7 @@ body {
 
 .resume-h h2 {
     width: fit-content;
-    color: rgb(235, 29, 29);
+    color: #007769;
 }
 
 .resume-h div {
@@ -131,8 +119,9 @@ body {
     background-color: rgba(0, 0, 0, 0.65);
 }
 
-.top-background div div h2 {
-    text-shadow: 10px 10px 7px rgb(50, 50, 50), -2px -2px 5px rgb(110, 110, 110);
+.top-background div div h1 {
+    color: #007769;
+    text-shadow: 4px 4px 8px rgb(235, 235, 235), -2px -2px 5px rgb(225, 225, 225);
 }
 
 .top-background div div p {
@@ -147,7 +136,7 @@ body {
 }
 
 footer i {
-    color: rgb(235, 29, 29);
+    color: #e77689;
 }
 
 footer i {
@@ -155,7 +144,7 @@ footer i {
 }
 
 footer a:hover i {
-    color: rgb(173, 37, 37);
+    color: #c95a6c;
 }
 
 /* .............scrollbar............ */
@@ -223,8 +212,11 @@ footer a:hover i {
     }
 
     .navbar-brand {
-        font-size: 34px;
-        margin-left: 30px;
+        width: 170px !important;
+        margin: 0% 0% 0% 5% ;
+    }
+    #scrolling-logo {
+        width: 160px;
     }
 
     .top-background {
@@ -246,8 +238,11 @@ footer a:hover i {
 
 @media all and (min-width:576px) and (max-width:767px) {
     .navbar-brand {
-        font-size: 34px;
-        margin-left: 50px;
+        width: 200px !important;
+        margin: 0 0 0 45px;
+    }
+    #scrolling-logo {
+        width: 180px;
     }
 
     .top-background {
@@ -269,8 +264,11 @@ footer a:hover i {
 
 @media all and (min-width:768px) and (max-width:991px) {
     .navbar-brand {
-        font-size: 38px;
-        margin-left: 80px;
+        width: 220px !important;
+        margin: 0 0 0 45px;
+    }
+    #scrolling-logo {
+        width: 180px;
     }
 
     #scroller #navbarSupportedContent {
@@ -302,8 +300,14 @@ footer a:hover i {
     }
 
     .navbar-brand {
-        font-size: 38px;
-        margin-left: 75px;
+        width: 20% !important;
+        margin: 10px 0 0 45px;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 160px;
     }
 
     .top-background {
@@ -330,6 +334,17 @@ footer a:hover i {
         right: 0;
     }
 
+    .navbar-brand {
+        width: 18% !important;
+        margin: 10px 0 0 45px;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 170px;
+    }
+
     .top-background {
         height: 920px;
     }
@@ -353,7 +368,16 @@ footer a:hover i {
         top: 45px;
         right: 0;
     }
-
+    .navbar-brand {
+        width: 18% !important;
+        margin: 10px 0 0 5%;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 200px;
+    }
     .top-background {
         height: 960px;
         background-position-y: -120px;
