@@ -100,6 +100,11 @@ body {
     font-family: serif;
 }
 
+.img-parent img {
+    width: 350px;
+    height: 350px;
+}
+
 .bottom-birds div:nth-of-type(2) {
     transform: scaleX(-1)
 }

@@ -1,0 +1,104 @@
+body {
+    background: #f7f6ee;
+}
+
+#content div {
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#content div img {
+    width: 100%;
+}
+
+/* .............scrollbar............ */
+
+::-webkit-scrollbar {
+    width:0px;
+}
+
+/* ..................fade.............. */
+
+#fader {
+    background: #f7f6ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+@media all and (max-width:575px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: min-content;
+        grid-gap: 10px;
+    }
+}
+
+@media all and (min-width:576px) and (max-width:767px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: min-content;
+        grid-gap: 15px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 39.3%;
+        grid-gap: 15px;
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 39.3%;
+        grid-gap: 15px;
+    }
+}
+
+@media all and (min-width:1200px) and (max-width:1399px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: min-content;
+        grid-gap: 15px;
+    }
+}
+
+@media all and (min-width:1400px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: min-content;
+        grid-gap: 15px;
+    }
+}

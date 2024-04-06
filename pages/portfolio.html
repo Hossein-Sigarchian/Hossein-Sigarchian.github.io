@@ -80,14 +80,16 @@
 
     <div class="container">
       <div class="row px-4">
-        <div class="col-12 mt-3 mt-xl-5 py-5 d-flex flex-column align-items-center mb-4 portfolio-h">
+        <div class="col-12 mt-3 mt-xl-5 py-5 d-flex flex-column align-items-center mb-2 mb-xxl-4 portfolio-h">
           <h1 class="display-4 fw-semibold">My Portfolio</h1>
           <div class="rounded-5"></div>
         </div>
         <div
-          class="col-12 col-xl-6 offset-xl-3 d-flex justify-content-center justify-content-xl-between flex-wrap fs-3 fw-semibold gallery-links">
-          <a class="mb-4 mb-sm-0 me-3 me-sm-5" href="illustrations.html" target="frame" class="navbtn">Illustrations</a>
-          <a class="ms-3 ms-sm-5" href="graphic-designs.html" target="frame" tabindex="-1">Graphic disigns</a>
+          class="col-12 d-flex justify-content-center justify-content-xl-between flex-wrap fs-3 fw-semibold gallery-links">
+          <a class="px-5 my-2" id="link-1" href="illustrations.html" target="frame" onfocus="illustration()" autofocus>Illustrations</a>
+          <a class="px-5 my-2" id="link-2" href="graphic-designs.html" target="frame" onfocus="Graphic()">Graphic disigns</a>
+          <a class="px-5 my-2" id="link-3" href="photographs.html" target="frame" onfocus="photo()">Photographs</a>
+          <a class="px-5 my-2" id="link-4" href="portraits.html" target="frame" onfocus="portrait()">Portraits</a>
         </div>
       </div>
     </div>
@@ -95,7 +97,7 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-12 pt-3">
-          <iframe class="w-100" id="idIframe" onload="iframeLoaded()" name="frame" frameborder="0"
+          <iframe class="w-100" id="idIframe" name="frame" frameborder="0"
             src="illustrations.html"></iframe>
         </div>
       </div>
@@ -105,7 +107,7 @@
 
   <div class="container mb-lg-5 mt-5 pt-lg-4 pt-xxl-5">
     <div class="row pb-1 pt-md-5 pt-xl-3">
-      <div class="col-12 col-lg-12"><img class="w-100" src="../images/boarder_5.png" alt=""></div>
+      <div class="col-12 col-lg-12"><img class="w-100" src="../images/border_5.png" alt=""></div>
     </div>
   </div>
 

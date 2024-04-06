@@ -90,6 +90,13 @@ body {
 }
 
 @media all and (min-width:576px) and (max-width:767px) {
+    #content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 15px;
+    }
     .box18-md-lg, .box2-md-lg, .box17-md-lg, .box19-md-lg {
         display: none;
     }
