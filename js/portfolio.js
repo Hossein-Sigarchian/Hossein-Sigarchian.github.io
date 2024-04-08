@@ -1,5 +1,3 @@
-"use strict";
-
 function fadeInPage() {
     if (!window.AnimationEvent) { return; }
     var fader = document.getElementById('fader', 'scroller');

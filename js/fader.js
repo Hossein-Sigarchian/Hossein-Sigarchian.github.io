@@ -18,3 +18,13 @@ function scroll() {
         document.getElementById("scroller").style.display = "none";
     }
 }
+
+function OpenImg() {
+    if (screen.width > 1199) {
+        document.getElementById('frame').style.display = "flex";
+    }
+}
+
+function CloseImg() {
+    document.getElementById('frame').style.display = "none";
+}

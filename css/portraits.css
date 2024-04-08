@@ -12,6 +12,35 @@ body {
     width: 100%;
 }
 
+/* ...............iframe................. */
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#frame {
+    display: none;
+    width: 99.1%;
+    height: 80%;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+#frame div {
+    position: relative;
+    z-index: 2;
+    margin: 15px 15px 0 0;
+}
+
+#frame div i {
+    font-size: 40px;
+    font-weight: bolder; 
+}
+
 /* .............scrollbar............ */
 
 ::-webkit-scrollbar {

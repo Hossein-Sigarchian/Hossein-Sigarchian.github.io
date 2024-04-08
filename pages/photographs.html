@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Photographs</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../css/photographs.css">
       </head>
 <body>
@@ -13,37 +14,42 @@
     <div id="content">
         <div id="content1">
             <div class="box1">
-                <img src="../images/photographs/tea-color.jpg" alt="">
+                <a href="images/photos/tea-color.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/tea-color.jpg" alt="a cup of tea next to some colorful stuff"></a>
             </div>
             <div class="box2">
-                <img src="../images/photographs/tree.jpg">
+                <a href="images/photos/tree.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/tree.jpg" alt="tree"></a>
             </div>
             <div class="box3">
-                <img src="../images/photographs/portrait.jpg">
+                <a href="images/photos/portrait.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/portrait.jpg" alt="portrait of a man"></a>
             </div>
             <div class="box7">
-                <img src="../images/photographs/tree-siluet.jpg" alt="">
+                <a href="images/photos/tree-siluet.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/tree-siluet.jpg" alt="a siluet photo of a tree"></a>
             </div>
         </div>
         <div id="content2">
             <div class="box4">
-                <img src="../images/photographs/sadegh_mah.jpg" alt="">
+                <a href="images/photos/sadegh_mah.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/sadegh_mah.jpg" alt="man is playing a musical instrument"></a>
             </div>
             <div class="box5">
-                <img src="../images/photographs/tea.jpg" alt="">
+                <a href="images/photos/tea.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/tea.jpg" alt="a clock next to a drawing of a tree"></a>
             </div>
             <div class="box7">
-                <img src="../images/photographs/window.jpg" alt="">
+                <a href="images/photos/window.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/window.jpg" alt="a window to the yard"></a>
             </div>
         </div>
         <div id="content3">
             <div class="box6">
-                <img src="../images/photographs/window.jpg" alt="">
+                <a href="images/photos/window.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/window.jpg" alt="a window to the yard"></a>
             </div>
             <div class="box7">
-                <img src="../images/photographs/tree-siluet.jpg" alt="">
+                <a href="images/photos/tree-siluet.html" target="frame"><img onclick="OpenImg()" src="../images/photographs/tree-siluet.jpg" alt="a siluet photo of a tree"></a>
             </div>
         </div>
+    </div>
+
+    <div id="frame">
+        <iframe id="img-window" name="frame" frameborder="0"></iframe>
+        <div onclick="CloseImg()"><i class="bi bi-x-lg"></i></div>
     </div>
 </body>
 </html>
