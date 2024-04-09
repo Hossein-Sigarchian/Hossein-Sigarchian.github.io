@@ -51,9 +51,10 @@ iframe {
 }
 
 #frame div {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    margin: 15px 15px 0 0;
+    top: 15px;
+    right: 15px;
 }
 
 #frame div i {

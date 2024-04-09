@@ -17,6 +17,7 @@ body {
 
 .nav-bar a {
     width: fit-content;
+    font-family: "Gloria Hallelujah", cursive;
 }
 
 #navbarSupportedContent {
@@ -111,6 +112,8 @@ body {
 .resume-h h2 {
     width: fit-content;
     color: #007769;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 4px;
 }
 
 .resume-h div {
@@ -121,11 +124,28 @@ body {
 
 .top-background div div h1 {
     color: #007769;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 4px;
     text-shadow: 4px 4px 8px rgb(235, 235, 235), -2px -2px 5px rgb(225, 225, 225);
 }
 
 .top-background div div p {
+    color: #58ffeb;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-shadow: 6px 6px 5px rgb(50, 50, 50), -1px -1px 5px rgb(125, 125, 125);
+}
+
+h3 {
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+}
+
+.resume-p-size p {
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /* ...................footer................... */

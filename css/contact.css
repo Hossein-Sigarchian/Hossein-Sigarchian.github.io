@@ -22,6 +22,7 @@ body {
 
 .nav-bar a {
     width: fit-content;
+    font-family: "Gloria Hallelujah", cursive;
 }
 
 #navbarSupportedContent {
@@ -104,6 +105,8 @@ body {
 .contact-h h1 {
     width: fit-content;
     color: #007769;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 4px;
 }
 .contact-h div {
     height: 4px;
@@ -112,14 +115,20 @@ body {
 }
 
 .text-box {
-    color: #fffbdd;
+    color: #fffdea;
     background-color: rgba(0, 0, 0, 0.2);
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .text-box p{
     width: fit-content;
 }
 .text-box-md {
-    color: black;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* ...................footer................... */

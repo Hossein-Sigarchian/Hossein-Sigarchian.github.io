@@ -16,6 +16,7 @@ body {
 
 .nav-bar a {
     width: fit-content;
+    font-family: "Gloria Hallelujah", cursive;
 }
 
 #navbarSupportedContent {
@@ -96,8 +97,8 @@ body {
 
 /* ....................main................... */
 
-.under-header {
-    font-family: serif;
+.boy-box p {
+    font-family: "Handlee", cursive;
 }
 
 .img-parent img {
@@ -132,21 +133,14 @@ a:has(>.center-hover) {
     text-align: center;
     line-height: 280px;
     top: 0;
-    font-family: serif;
-    letter-spacing: 2px;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 5px;
     z-index: 1;
     opacity: 0;
     transition: all 300ms ease 0s;
 }
 
 /* ...................footer................... */
-
-/* footer {
-    height: 600px;
-    background-image: url(../images/boarder_5.png);
-    background-size: cover;
-    background-position-y: 80%;
-} */
 
 .footer-circle {
     width: 60px;
@@ -228,9 +222,11 @@ footer a:hover i {
     #scroller #navbarSupportedContent {
         top: 78px;
     }
+    .boy-box p {
+        font-size: 35px;
+    }
     .center-hover-txt {
-        line-height: 730%;
-        font-family: serif;
+        line-height: 330px;
         opacity: 1;
         text-shadow: 2px 2px 4px black, -2px -2px 4px black;
     }
@@ -247,9 +243,11 @@ footer a:hover i {
     #scroller #navbarSupportedContent {
         top: 78px;
     }
+    .boy-box p {
+        font-size: 37px;
+    }
     .center-hover-txt {
         line-height: 330px;
-        font-family: serif;
         opacity: 1;
         text-shadow: 3px 3px 5px black;
     }
@@ -266,13 +264,15 @@ footer a:hover i {
     #scrolling-logo {
         width: 180px;
     }
+    .boy-box p {
+        font-size: 40px;
+    }
     .center-hover-txt:hover {
         opacity: 1;
         line-height: 350px;
     }
     .center-hover-txt {
         line-height: 350px;
-        font-family: serif;
         opacity: 1;
         text-shadow: 3px 3px 5px black;
     }
@@ -293,6 +293,9 @@ footer a:hover i {
         width: fit-content;
         top: 45px;
         right: 0;
+    }
+    .boy-box p {
+        font-size: 42px;
     }
     .center-hover-txt:hover {
         opacity: 1;
@@ -316,6 +319,9 @@ footer a:hover i {
     #scrolling-logo {
         width: 170px;
     }
+    .boy-box p {
+        font-size: 42px;
+    }
     .center-hover-txt:hover {
         opacity: 1;
         line-height: 350px;
@@ -337,6 +343,9 @@ footer a:hover i {
     }
     #scrolling-logo {
         width: 200px;
+    }
+    .boy-box p {
+        font-size: 44px;
     }
     .center-hover-txt:hover {
         opacity: 1;

@@ -16,6 +16,7 @@ body {
 
 .nav-bar a {
     width: fit-content;
+    font-family: "Gloria Hallelujah", cursive;
 }
 
 #navbarSupportedContent {
@@ -103,6 +104,8 @@ body {
 .portfolio-h h1 {
     width: fit-content;
     color: #007769;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 4px;
 }
 
 .portfolio-h div {
@@ -112,19 +115,18 @@ body {
 }
 
 .gallery-links a {
-    color: #007769;;
+    color: #007769;
     text-decoration: none;
-    letter-spacing: 1px;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 2px;
 }
 
 .gallery-links a:focus {
-    color: #00685c;;
-    letter-spacing: 1px;
+    font-size: 33px !important;
+    color: #049b89;
     font-weight: bolder;
     outline: none;
 }
-
-#link-1:autofocus {}
 
 
 /* ...................footer................... */
