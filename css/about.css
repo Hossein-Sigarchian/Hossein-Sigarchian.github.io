@@ -126,7 +126,7 @@ body {
     color: #007769;
     font-family: "Luckiest Guy", cursive;
     letter-spacing: 4px;
-    text-shadow: 4px 4px 8px rgb(235, 235, 235), -2px -2px 5px rgb(225, 225, 225);
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.6), -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
 .top-background div div p {
@@ -134,7 +134,7 @@ body {
     font-family: "Handlee", cursive;
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 6px 6px 5px rgb(50, 50, 50), -1px -1px 5px rgb(125, 125, 125);
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5), -1px -1px 5px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
@@ -146,6 +146,15 @@ h3 {
     font-family: "Handlee", cursive;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.canadian-p p {
+    width: fit-content;
+}
+.canadian-p img {
+    width: 40px;
+    height: 22px;
+    margin-top: 5px;
 }
 
 /* ...................footer................... */
