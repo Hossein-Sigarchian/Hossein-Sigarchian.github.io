@@ -5,10 +5,13 @@ function fadeInPage() {
 }
 fadeInPage();
 
-window.onscroll = function () {
-    scroll()
-};
-
+function iframeLoaded() {
+    var iFrameID = document.getElementById('idIframe');
+    if (iFrameID) {
+        iFrameID.height = "";
+        iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+    }
+}
 function scroll() {
     if (document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100) {
@@ -19,10 +22,6 @@ function scroll() {
     }
 }
 
-function iframeLoaded() {
-    var iFrameID = document.getElementById('idIframe');
-    if(iFrameID) {
-          iFrameID.height = "";
-          iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-    }   
-}
+window.onscroll = function () {
+    scroll()
+};
