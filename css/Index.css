@@ -8,7 +8,7 @@
 
 body {
     background-color: rgb(255, 253, 235);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .title {
@@ -26,6 +26,21 @@ h1 {
     margin: 10px;
 }
 
+h3 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.pages-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
 .pages {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +51,10 @@ h1 {
     margin: 0 auto;
     border-radius: 50px;
     background:  rgb(154, 215, 255);
+}
+
+.pages-box>div:nth-last-of-type(1) {
+    margin-top: 30px;
 }
 
 a {
