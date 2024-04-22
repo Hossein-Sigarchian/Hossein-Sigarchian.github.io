@@ -1,13 +1,17 @@
 const BTN = document.querySelectorAll("button");
 const IMG = document.querySelector("img");
-let show = 1
+let show = 1;
+let opacity_0;
+let opacity_1;
+
 
 BTN[0].addEventListener("click", function () {
     if (show == 0) {
+        clearInterval(opacity_1)
         let initial = 0;
-        let opacity = setInterval(function () {
+        opacity_0 = setInterval(function () {
             if (initial == 100) {
-                clearInterval(opacity)
+                clearInterval(opacity_0)
             }
             IMG.style.filter = `opacity(${initial}%)`;
             initial++;
@@ -18,10 +22,11 @@ BTN[0].addEventListener("click", function () {
 
 BTN[1].addEventListener("click", function () {
     if (show == 1) {
+        clearInterval(opacity_0)
         let initial = 100;
-        let opacity = setInterval(function () {
+        opacity_1 = setInterval(function () {
             if (initial == 0) {
-                clearInterval(opacity)
+                clearInterval(opacity_1)
             }
             IMG.style.filter = `opacity(${initial}%)`;
             initial--;
