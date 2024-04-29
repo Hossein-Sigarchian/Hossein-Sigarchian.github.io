@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(255, 253, 231);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    height: 80vh;
+    margin: 70px auto;
+    border-radius: 40px;
+    box-shadow: 0 0 5px 5px rgb(200, 200, 200);
+    background-color: white;
+}
+
+.row:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.row:nth-of-type(1) div {
+    width: 25%;
+    padding: 25px;
+}
+
+input {
+    width: 100%;
+}
+
+.row:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-around;
+}
+
+.row:nth-of-type(2) div {
+    width: 23%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+input {
+    width: 100%;
+}
+
+.row:nth-of-type(3) {
+    width: 100%;
+    display: flex;
+    padding: 10px 39px;
+    justify-content: space-around;
+}
+
+.row:nth-of-type(3) div {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 184);
+}
+
+input {
+    width: 100%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+.final-color p {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), -1px -1px 1px gray;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    color: rgb(39, 96, 255);
+    font-family: cursive;
+}
+
+/* ...........js classes.......... */
+
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.green {
+    background-color: rgb(0, 255, 0);
+}
+
+.blue {
+    background-color: rgb(0, 0, 255);
+}
+
+.alfa {
+    background-image: linear-gradient(to right, white, black);
+}

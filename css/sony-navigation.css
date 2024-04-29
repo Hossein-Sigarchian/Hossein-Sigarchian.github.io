@@ -1,0 +1,1696 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 253, 235);
+    overflow-x: hidden;
+}
+
+@Media all and (max-width:991px) {
+
+    /* ..........the top part of navigation.......... */
+
+    .nav-bar {
+        height: 65px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+    }
+
+    a:has(img) {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        width: 100px;
+    }
+
+    img {
+        width: 100%;
+        height: 28%;
+        margin: auto 0px;
+    }
+
+    .menue-toggler {
+        height: 100%;
+        width: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 5px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .menue-toggler div {
+        height: 1px;
+        width: 20px;
+        margin: 3px 0;
+        background-color: white;
+        transition: all 250ms ease 0s;
+    }
+    
+    .sub-nav {
+        list-style-type: none;
+    }
+
+    .sub-nav>li:nth-of-type(1){
+        display: none;
+    }
+
+    .sub-nav>li:nth-of-type(2){
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        position: absolute;
+        top: 23px;
+        left: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .sub-nav>li:nth-of-type(2):hover {
+        color: #5E9DF4;
+    }
+
+    /* ...........the toggling part of navigation............ */
+
+    nav {
+        height: 0;
+        width: 100%;
+        position: absolute;
+        top: 65px;
+        background-color: black;
+        overflow: hidden;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav li {
+        height: 60px;
+        border-bottom: 1px solid rgb(45, 45, 45); 
+    }
+    
+    nav ul li a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        cursor: pointer;
+        padding: 20px 16px;
+        text-decoration: none;
+    }
+    
+    /* nav ul li a:focus {
+        box-shadow: 0px 0px 0px 2px blue inset;
+    } */
+
+    .sm-contact {
+        padding-left: 35px;
+    }
+    
+    .nav-li-toggler div {
+        position: absolute;
+        top: 16px;
+        right: 27px;
+        width: 25px;
+        height: 25px;
+        transition: all 300ms ease 0s;
+    }
+    
+    .nav-li-toggler div:nth-of-type(1) {
+        align-self: center;
+        width: 15px;
+        height: 1px;
+        top: 29px;
+        background-color: white;
+        transition: all 300ms ease 0s;
+    }
+    
+    .nav-li-toggler div:nth-of-type(2) {
+        width: 1px;
+        height: 15px;
+        top: 22px;
+        right: 34px;
+        background-color: white;
+    }
+    
+    /* ...............SubMenues................. */
+    
+    /* Businesses & Product Top */
+    
+    .business {
+        position: relative;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        top: 61px;
+        transition: all 230ms ease-in 0s;
+    }
+    
+    .business>ul {
+        width: 100%;
+        position: relative;
+        padding: 15px 30px;
+        background-color: #2B2B2B;
+        transition: all 300ms ease 0s;
+    }
+    
+    .business>div:nth-of-type(1) {
+        display: none;
+    }
+    
+    .business button {
+        display: none;
+    }
+    
+    .first-li {
+        font-size: 16px;
+    }
+
+    .business>ul {
+        list-style-type: none;
+    }
+    
+    .business>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+    
+    .business>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+    
+    .business>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        color: #929292;
+    }
+    
+    .sub-list {
+        list-style-type: none;
+    }
+    
+    .sub-list>li {
+        line-height: 140%;
+        margin-left: 20px;
+    }
+    
+    .sub-list>li>a {
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+    
+    .sub-list i {
+        color: #929292;
+        padding-left: 8px;
+        transition: all 300ms ease 0s;
+    }
+    
+    /* ......js class..... */
+    
+    .business-height {
+        height: 440px;
+    }
+    .business-margin {
+        margin-bottom: 441px;
+    }
+
+    /* About Sony Group Top */
+
+    .ordinary-list {
+        position: relative;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: all 230ms ease-in 0s;
+    }
+    
+    .ordinary-list>ul {
+        width: 100%;
+        position: relative;
+        padding: 15px 30px;
+        background-color: #2B2B2B;
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>div:nth-of-type(1) {
+        display: none;
+    }
+
+    .ordinary-list button {
+        display: none;
+    }
+
+    .first-li {
+        font-size: 16px;
+    }
+
+    .ordinary-list>ul {
+        list-style-type: none;
+    }
+    
+    .ordinary-list>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+    
+    .ordinary-list>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+    
+    .ordinary-list>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        color: #929292;
+    }
+    
+    .sub-list {
+        list-style-type: none;
+    }
+    
+    .sub-list>li {
+        line-height: 140%;
+        margin-left: 20px;
+    }
+    
+    .sub-list>li>a {
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+    
+    .sub-list i {
+        color: #929292;
+        padding-left: 8px;
+        transition: all 300ms ease 0s;
+    }
+
+        /* .............search window.............. */
+
+        .search-window-parent {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            z-index: 5;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    
+        .search-window {
+            width: 100vw;
+            height: 71px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            padding-right: 15px;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    
+        .search-window input{
+            height: 42px;
+            width: 74%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid rgb(210, 210, 210);
+        }
+    
+        .search-window input:focus {
+            border: 1px solid blue;
+        }
+    
+        .search-window-btn {
+            height: 42px;
+            width: 42px;
+            position: relative;
+            display: block;
+            font-size: 1rem;
+            cursor: pointer;
+            color: white;
+            background-color: #333333;
+            transition: all 300ms ease 0s;
+        }
+    
+        .search-window-btn:hover {
+            background-color: #525252;
+        }
+
+        .search-sm-x {
+            height: 40px;
+            width: 45px;
+            rotate: 180deg;
+            padding-left: 12px;
+            color: rgb(120, 120, 120);
+            cursor: pointer;
+            border: none;
+            background-color: white;
+        }
+        
+        .search-window-X {
+            display: none;
+        }
+    
+    /* About Sony Group */
+    
+    #sony-group {
+        top: 121px;
+    }
+
+    /*js*/.sony-g-height {
+        height: 336px;
+    }
+    /*js*/.sony-g-margin {
+        margin-bottom: 338px;
+    }
+    
+    /* Tecnology */
+    
+    #technology {
+        top: 181px;
+    }
+    
+    /*js*/.technology-height {
+        height: 303px;
+    }
+
+    /*js*/.technology-margin {
+        margin-bottom: 303px;
+    }
+
+    /* Sustainability*/
+
+    #Sustainability {
+        top: 241px;
+    }
+
+    /* Design*/
+
+    #Design {
+        top: 301px;
+    }
+
+    /*js*/.design-height {
+        height: 237px;
+     }
+
+    /*js*/.design-margin {
+        margin-bottom: 239px;
+    }
+
+    /* Employees/Careers*/
+
+    #employees-careers {
+        top: 361px;
+    }
+
+    /*js*/.employees-height {
+        height: 106px;
+    }
+
+   /*js*/.employees-margin {
+       margin-bottom: 108px;
+    }
+
+    /* Investor Relations */
+
+    #Investor {
+        top: 421px;
+    }
+
+    /*js*/.Investor-height {
+        height: 237px;
+    }    
+    /*js*/.Investor-margin {
+        margin-bottom: 239px;
+    }
+}
+
+@Media all and (min-width:992px) and (max-width:1249px) {
+
+    /* .............. Main Navigation Bar ............... */
+
+    .nav-bar {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    a:has(img) {
+        position: relative;
+        transform: translateX(-470px);
+        display: flex;
+        width: 108px;
+    }
+
+    img {
+        width: 100%;
+        height: 32%;
+        margin: auto 0px;
+    }
+
+    nav {
+        position: absolute;
+        top: 0px;
+        z-index: 5;
+        width: 940px;
+        height: 70px;
+        margin: 0 30px;
+    }
+
+    nav ul {
+        height: 100%;
+        display: flex;
+        width: fit-content;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        margin: auto 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul li a:hover {
+        color: #5E9DF4;
+    }
+
+    nav ul li a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        transform: scaleX(0);
+        background-color: #5E9DF4;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sub-nav {
+        position: relative;
+        transform: translateX(510px);
+        height: 100%;
+        z-index: 6;
+        display: flex;
+        width: fit-content;
+        list-style-type: none;
+    }
+
+    .sub-nav li {
+        margin: auto 15px;
+    }
+
+    .sub-nav li a {
+        font-size: 14px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-nav li a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-nav li:nth-of-type(1)>a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        transform: scaleX(0);
+        background-color: #5E9DF4;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-nav li:nth-of-type(1)>a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sub-nav li:nth-of-type(2)>a {
+        font-size: 20px;
+    }
+
+    .menue-toggler {
+        display: none;
+    }
+    
+    .nav-li-toggler {
+        display: none;
+    }
+
+    .sm-contact {
+        display: none;
+    }
+
+    /* ...............SubMenues................. */
+
+    /* Businesses & Product Top */
+
+    .business {
+        position: absolute;
+        top: 60px;
+    }
+
+    .business>ul {
+        width: 380px;
+        position: absolute;
+        padding: 20px 40px 30px;
+        background-color: #2B2B2B;
+    }
+
+    .business>div:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        background-color: #2B2B2B;
+        rotate: 45deg;
+        margin-bottom: -30px;
+        margin-left: 50px;
+    }
+
+    .business button {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+
+    .first-li {
+        font-size: 18px;
+    }
+
+    .business>ul {
+        list-style-type: none;
+    }
+
+    .business>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+
+    .business>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .business>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        transform: translateX(0);
+        transition: all 300ms ease 0s;
+    }
+
+    .business>ul>li>a:hover i {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    .business>ul>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-list {
+        list-style-type: none;
+    }
+
+    .sub-list:hover i {
+        margin-left: 15px;
+        color: #5E9DF4;
+    }
+
+    .sub-list>li {
+        line-height: 140%;
+        margin-left: 20px;
+    }
+
+    .sub-list>li>a {
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-list>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-list i {
+        padding-left: 8px;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-list:hover i {
+        margin-left: 7px;
+    }
+
+    .exsessive-hover {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    /* Ordinary-lists */
+
+    .ordinary-list {
+        position: absolute;
+        top: 60px;
+    }
+
+    .ordinary-list>ul {
+        width: 380px;
+        position: absolute;
+        padding: 20px 40px 30px;
+        background-color: #2B2B2B;
+    }
+
+    .ordinary-list>div:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        background-color: #2B2B2B;
+        rotate: 45deg;
+        margin-bottom: -30px;
+        margin-left: 50px;
+    }
+
+    .ordinary-list button {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+
+    .first-li {
+        font-size: 18px;
+    }
+
+    .ordinary-list>ul {
+        list-style-type: none;
+    }
+
+    .ordinary-list>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+
+    .ordinary-list>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        transform: translateX(0);
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>ul>li>a:hover i {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    .ordinary-list>ul>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .business {
+        left: 11%;
+    }
+
+    /* .............search window.............. */
+
+    .search-window-parent {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .search-window {
+        display: flex;
+        position: absolute;
+        left: 74%;
+        top: 70px;
+    }
+
+    .search-window input{
+        height: 46px;
+        width: 280px;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .search-window input:focus {
+        border: 1px solid blue;
+    }
+
+    .search-window-btn {
+        height: 46px;
+        width: 46px;
+        position: relative;
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        background-color: #333333;
+        transition: all 300ms ease 0s;
+    }
+
+    .search-window-btn:hover {
+        background-color: #525252;
+    }
+    
+    .search-window-X {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem; 
+        z-index: 6;
+        color: rgb(228, 228, 228);
+        background-color: transparent;      
+    }
+
+
+    /* About Sony Group */
+
+    #sony-group {
+        left: 25%;
+    }
+
+    /* Tecnology */
+
+    #technology {
+        left: 36%;
+    }
+
+    /* Sustainability*/
+
+    #Sustainability {
+        left: 46%;
+    }
+
+    /* Design*/
+
+    #Design {
+        left: 54%;
+    }
+
+    /* Employees/Careers*/
+
+    #employees-careers {
+        left: 64%;
+    }
+
+    /* Investor Relations */
+
+    #Investor {
+        left: 63%;
+    }
+
+    #Investor>div {
+        translate: 170px 0px;
+    }
+}
+
+@Media all and (min-width:1250px) and (max-width:1499px) {
+
+    /* .............. Main Navigation Bar ............... */
+
+    .nav-bar {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    a:has(img) {
+        position: relative;
+        transform: translateX(-470px);
+        display: flex;
+        width: 108px;
+    }
+
+    img {
+        width: 100%;
+        height: 32%;
+        margin: auto 0px;
+    }
+
+    nav {
+        position: absolute;
+        top: 0px;
+        z-index: 5;
+        width: 940px;
+        height: 70px;
+        margin: 0 30px;
+    }
+
+    nav ul {
+        height: 100%;
+        display: flex;
+        width: fit-content;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        margin: auto 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul li a:hover {
+        color: #5E9DF4;
+    }
+
+    nav ul li a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        transform: scaleX(0);
+        background-color: #5E9DF4;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sub-nav {
+        position: relative;
+        transform: translateX(510px);
+        height: 100%;
+        z-index: 6;
+        display: flex;
+        width: fit-content;
+        list-style-type: none;
+    }
+
+    .sub-nav li {
+        margin: auto 15px;
+    }
+
+    .sub-nav li a {
+        font-size: 14px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-nav li a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-nav li:nth-of-type(1)>a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        transform: scaleX(0);
+        background-color: #5E9DF4;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-nav li:nth-of-type(1)>a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sub-nav li:nth-of-type(2)>a {
+        font-size: 20px;
+    }
+
+    .menue-toggler {
+        display: none;
+    }
+    
+    .nav-li-toggler {
+        display: none;
+    }
+
+    .sm-contact {
+        display: none;
+    }
+
+    /* ...............SubMenues................. */
+
+    /* Businesses & Product Top */
+
+    .business {
+        position: absolute;
+        top: 60px;
+    }
+
+    .business>ul {
+        width: 380px;
+        position: absolute;
+        padding: 20px 40px 30px;
+        background-color: #2B2B2B;
+    }
+
+    .business>div:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        background-color: #2B2B2B;
+        rotate: 45deg;
+        margin-bottom: -30px;
+        margin-left: 50px;
+    }
+
+    .business button {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+
+    .first-li {
+        font-size: 18px;
+    }
+
+    .business>ul {
+        list-style-type: none;
+    }
+
+    .business>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+
+    .business>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .business>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        transform: translateX(0);
+        transition: all 300ms ease 0s;
+    }
+
+    .business>ul>li>a:hover i {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    .business>ul>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-list {
+        list-style-type: none;
+    }
+
+    .sub-list:hover i {
+        margin-left: 15px;
+        color: #5E9DF4;
+    }
+
+    .sub-list>li {
+        line-height: 140%;
+        margin-left: 20px;
+    }
+
+    .sub-list>li>a {
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-list>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-list i {
+        padding-left: 8px;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-list:hover i {
+        margin-left: 7px;
+    }
+
+    .exsessive-hover {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    /* Ordinary-lists */
+
+    .ordinary-list {
+        position: absolute;
+        top: 60px;
+    }
+
+    .ordinary-list>ul {
+        width: 380px;
+        position: absolute;
+        padding: 20px 40px 30px;
+        background-color: #2B2B2B;
+    }
+
+    .ordinary-list>div:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        background-color: #2B2B2B;
+        rotate: 45deg;
+        margin-bottom: -30px;
+        margin-left: 50px;
+    }
+
+    .ordinary-list button {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+
+    .first-li {
+        font-size: 18px;
+    }
+
+    .ordinary-list>ul {
+        list-style-type: none;
+    }
+
+    .ordinary-list>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+
+    .ordinary-list>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        transform: translateX(0);
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>ul>li>a:hover i {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    .ordinary-list>ul>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .business {
+        left: 18%;
+    }
+
+    /* .............search window.............. */
+
+    .search-window-parent {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .search-window {
+        display: flex;
+        position: absolute;
+        left: 72%;
+        top: 70px;
+    }
+
+    .search-window input{
+        height: 46px;
+        width: 280px;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .search-window input:focus {
+        border: 1px solid blue;
+    }
+
+    .search-window-btn {
+        height: 46px;
+        width: 46px;
+        position: relative;
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        background-color: #333333;
+        transition: all 300ms ease 0s;
+    }
+
+    .search-window-btn:hover {
+        background-color: #525252;
+    }
+    
+    .search-window-X {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem; 
+        z-index: 6;
+        color: rgb(228, 228, 228);
+        background-color: transparent;      
+    }
+
+
+    /* About Sony Group */
+
+    #sony-group {
+        left: 28%;
+    }
+
+    /* Tecnology */
+
+    #technology {
+        left: 38%;
+    }
+
+    /* Sustainability*/
+
+    #Sustainability {
+        left: 47%;
+    }
+
+    /* Design*/
+
+    #Design {
+        left: 54%;
+    }
+
+    /* Employees/Careers*/
+
+    #employees-careers {
+        left: 62%;
+    }
+
+    /* Investor Relations */
+
+    #Investor {
+        left: 72%;
+    }
+}
+
+@Media all and (min-width:1500px) {
+
+    /* .............. Main Navigation Bar ............... */
+
+    .nav-bar {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+
+    a:has(img) {
+        position: relative;
+        transform: translateX(-470px);
+        display: flex;
+        width: 108px;
+    }
+
+    img {
+        width: 100%;
+        height: 32%;
+        margin: auto 0px;
+    }
+
+    nav {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+        width: 940px;
+        height: 70px;
+    }
+
+    nav ul {
+        height: 100%;
+        display: flex;
+        width: fit-content;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        margin: auto 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul li a:hover {
+        color: #5E9DF4;
+    }
+
+    nav ul li a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        transform: scaleX(0);
+        background-color: #5E9DF4;
+        transition: all 300ms ease 0s;
+    }
+
+    nav ul li a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sub-nav {
+        position: relative;
+        transform: translateX(510px);
+        height: 100%;
+        display: flex;
+        z-index: 6;
+        width: fit-content;
+        list-style-type: none;
+    }
+
+    .sub-nav li {
+        margin: auto 15px;
+    }
+
+    .sub-nav li a {
+        font-size: 14px;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-nav li a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-nav li:nth-of-type(1)>a::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        display: block;
+        transform: scaleX(0);
+        background-color: #5E9DF4;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-nav li:nth-of-type(1)>a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .sub-nav li:nth-of-type(2)>a {
+        font-size: 20px;
+    }
+
+    .menue-toggler {
+        display: none;
+    }
+    
+    .nav-li-toggler {
+        display: none;
+    }
+
+    .sm-contact {
+        display: none;
+    }
+
+    /* ...............SubMenues................. */
+
+    /* Businesses & Product Top */
+
+    .business {
+        position: absolute;
+        top: 60px;
+    }
+
+    .business>ul {
+        width: 380px;
+        position: absolute;
+        padding: 20px 40px 30px;
+        background-color: #2B2B2B;
+    }
+
+    .business>div:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        background-color: #2B2B2B;
+        rotate: 45deg;
+        margin-bottom: -30px;
+        margin-left: 50px;
+    }
+
+    .business button {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+
+    .first-li {
+        font-size: 18px;
+    }
+
+    .business>ul {
+        list-style-type: none;
+    }
+
+    .business>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+
+    .business>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .business>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        transform: translateX(0);
+        transition: all 300ms ease 0s;
+    }
+
+    .business>ul>li>a:hover i {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    .business>ul>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-list {
+        list-style-type: none;
+    }
+
+    .sub-list:hover i {
+        margin-left: 15px;
+        color: #5E9DF4;
+    }
+
+    .sub-list>li {
+        line-height: 140%;
+        margin-left: 20px;
+    }
+
+    .sub-list>li>a {
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-list>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .sub-list i {
+        padding-left: 8px;
+        transition: all 300ms ease 0s;
+    }
+
+    .sub-list:hover i {
+        margin-left: 7px;
+    }
+
+    .exsessive-hover {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    /* Ordinary-lists */
+
+    .ordinary-list {
+        position: absolute;
+        top: 60px;
+    }
+
+    .ordinary-list>ul {
+        width: 380px;
+        position: absolute;
+        padding: 20px 40px 30px;
+        background-color: #2B2B2B;
+    }
+
+    .ordinary-list>div:nth-of-type(1) {
+        width: 40px;
+        height: 40px;
+        background-color: #2B2B2B;
+        rotate: 45deg;
+        margin-bottom: -30px;
+        margin-left: 50px;
+    }
+
+    .ordinary-list button {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+
+    .first-li {
+        font-size: 18px;
+    }
+
+    .ordinary-list>ul {
+        list-style-type: none;
+    }
+
+    .ordinary-list>ul>li {
+        line-height: 140%;
+        margin: 10px 0px;
+    }
+
+    .ordinary-list>ul>li>a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>ul>li>a>i {
+        font-size: 14px;
+        padding-left: 8px;
+        transform: translateX(0);
+        transition: all 300ms ease 0s;
+    }
+
+    .ordinary-list>ul>li>a:hover i {
+        margin-left: 7px;
+        color: #5E9DF4;
+    }
+
+    .ordinary-list>ul>li>a:hover {
+        color: #5E9DF4;
+    }
+
+    .business {
+        left: 23%;
+    }
+
+    /* .............search window.............. */
+
+    .search-window-parent {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .search-window {
+        display: flex;
+        position: absolute;
+        left: 69%;
+        top: 70px;
+    }
+
+    .search-window input{
+        height: 46px;
+        width: 280px;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .search-window input:focus {
+        border: 1px solid blue;
+    }
+
+    .search-window-btn {
+        height: 46px;
+        width: 46px;
+        position: relative;
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        background-color: #333333;
+        transition: all 300ms ease 0s;
+    }
+
+    .search-window-btn:hover {
+        background-color: #525252;
+    }
+    
+    .search-window-X {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem; 
+        z-index: 6;
+        color: rgb(228, 228, 228);
+        background-color: transparent;      
+    }
+
+    /* About Sony Group */
+
+    #sony-group {
+        left: 32%;
+    }
+
+    /* Tecnology */
+
+    #technology {
+        left: 40.5%;
+    }
+
+    /* Sustainability*/
+
+    #Sustainability {
+        left: 46%;
+    }
+
+    /* Design*/
+
+    #Design {
+        left: 53%;
+    }
+
+    /* Employees/Careers*/
+
+    #employees-careers {
+        left: 58%;
+    }
+
+    /* Investor Relations */
+
+    #Investor {
+        left: 68%;
+    }
+}
+
+/* .......... js classes ............. */
+
+.hidden {
+    display: none;
+}
+
+.nav-open {
+    height: 90vh;
+    border-top: 1px solid rgb(45, 45, 45); 
+}
+
+.nav-open-with-li-open {
+    height: 920px;
+}
+
+.opacity-custom {
+    opacity: 0;
+}
+
+.rotate-custom-90 {
+    rotate: 90deg;
+}
+
+.rotate-custom-45 {
+    rotate: 45deg;
+    translate: 0px 8px;
+}
+
+.rotate-custom--45 {
+    rotate: -45deg;
+    translate: 0px -6px;
+}
+
+.a-focus {
+    box-shadow: 0px 0px 0px 1px blue inset;
+}

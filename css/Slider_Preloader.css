@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 253, 235);
+    overflow-x: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3), -0px -0px 25px rgba(0, 0, 0, 0.5);
+    margin: 80px auto;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.icon-1, .icon-2 {
+    height: 40px;
+    width: 40px;
+    font-size:34px;
+    position: absolute;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    background-color: rgba(255, 255, 255, 0.1);
+} 
+
+.icon-1 {
+    top:50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.icon-2 {
+    top:50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+/* .............spinner.............. */
+
+div:has(.spinner-1) {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.spinner-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 30px solid rgb(0, 100, 255);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    top: 150px;
+    left: 50%;
+    translate: -50% 0;
+    animation: spinner-animation 2s linear 0s infinite normal none running;
+  }
+
+.spinner-3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 30px solid rgb(0, 100, 255);
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    top: 150px;
+    left: 50%;
+    translate: -50% 0;
+    animation: spinner-animation 3s linear 0s infinite normal none running;
+  }
+  
+  @keyframes spinner-animation {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ...........js class.......... */
+
+  .hidden {
+    display: none;
+  }

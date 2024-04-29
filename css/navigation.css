@@ -10,6 +10,7 @@
 body {
     background-color: rgb(255, 253, 235);
     height: 2500px;
+    overflow-x: hidden;
 }
 
 @media all and (max-width:575px) {
