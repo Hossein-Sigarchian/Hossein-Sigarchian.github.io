@@ -17,9 +17,6 @@ const LANGUAGE_LIST = $(".languages ul");
 const SEARCH_MODAL = $(".search-bar-holder");
 const SEARCH_BAR = $(".search-bar");
 
-// درباره پیچیدگی اسکرول فانکشن نویگیشن پیج اصلی سؤال شود
-// درباره استایل اسکرول بار پیج اصلی سؤال شود
-
 window.addEventListener("resize", function () {
     let screen_w = document.documentElement.clientWidth;
     if (screen_w>=1700) {
@@ -29,6 +26,22 @@ window.addEventListener("resize", function () {
         SEARCH_MODAL.css("width", "1700px");
         SEARCH_BAR.css("width", "1700px");
         LANGUAGE_HOLDER.css("right", "5%");
+    }
+    else if (992>=screen_w>350) {
+        $("body").css("width", "100%");
+        $(".main-nav").css("width", "100%")
+        MAIN_MENU.css("width", "320px");
+        SEARCH_MODAL.css("width", "100%");
+        SEARCH_BAR.css("width", "100%");
+        LANGUAGE_HOLDER.css("right", "0");
+    }
+    else if (screen_w<=350) {
+        $("body").css("width", "100%");
+        $(".main-nav").css("width", "100%")
+        MAIN_MENU.css("width", "300px");
+        SEARCH_MODAL.css("width", "100%");
+        SEARCH_BAR.css("width", "100%");
+        LANGUAGE_HOLDER.css("right", "0");
     }
     else {
         $("body").css("width", "100%");
@@ -49,6 +62,22 @@ window.addEventListener("load", function () {
         SEARCH_MODAL.css("width", "1700px");
         SEARCH_BAR.css("width", "1700px");
         LANGUAGE_HOLDER.css("right", "5%");
+    }
+    else if (992>=screen_w>350) {
+        $("body").css("width", "100%");
+        $(".main-nav").css("width", "100%")
+        MAIN_MENU.css("width", "320px");
+        SEARCH_MODAL.css("width", "100%");
+        SEARCH_BAR.css("width", "100%");
+        LANGUAGE_HOLDER.css("right", "0");
+    }
+    else if (screen_w<=350) {
+        $("body").css("width", "100%");
+        $(".main-nav").css("width", "100%")
+        MAIN_MENU.css("width", "300px");
+        SEARCH_MODAL.css("width", "100%");
+        SEARCH_BAR.css("width", "100%");
+        LANGUAGE_HOLDER.css("right", "0");
     }
     else {
         $("body").css("width", "100%");
