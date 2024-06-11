@@ -267,6 +267,7 @@ body {
     /* ...........menu content............. */
 
     .menu-content {
+        width: 300px;
         z-index: 10;
         top: 55px;
         height: 100vh;
@@ -1028,6 +1029,7 @@ body {
 
     /* ...........menu content............. */
     .menu-content {
+        width: 320px;
         z-index: 11;
         top: 55px;
         height: 100vh;
@@ -1842,6 +1844,7 @@ body {
     /* ...........menu content............. */
 
     .menu-content {
+        width: 320px;
         z-index: 11;
         top: 55px;
         height: 100vh;
@@ -2739,6 +2742,7 @@ body {
     /* ...........menu content............. */
 
     .menu-content {
+        width: 100%;
         z-index: 11;
         top: 135px;
         overflow: hidden;
@@ -3585,6 +3589,7 @@ body {
     /* ...........menu content............. */
 
     .menu-content {
+        width: 100%;
         z-index: 11;
         top: 135px;
         overflow: hidden;
@@ -4450,6 +4455,7 @@ body {
     /* ...........menu content............. */
 
     .menu-content {
+        width: 100%;
         z-index: 11;
         top: 135px;
         overflow: hidden;
