@@ -474,12 +474,7 @@ body {
     }
 
     .bottom-gradient {
-        position: absolute;
-        display: flex;
-        width: 100%;
-        height: 5px;
-        top: auto;
-        background-image: linear-gradient(to right, #ff1541, #1a2434);
+        display: none;
     }    
 
     /* ..............main................... */
@@ -1236,12 +1231,7 @@ body {
     }
 
     .bottom-gradient {
-        position: absolute;
-        display: flex;
-        width: 100%;
-        height: 5px;
-        top: auto;
-        background-image: linear-gradient(to right, #ff1541, #1a2434);
+        display: none;
     }
 
 /* ..............main................... */
@@ -2051,12 +2041,7 @@ body {
     }
 
     .bottom-gradient {
-        position: absolute;
-        display: flex;
-        width: 100%;
-        height: 5px;
-        top: auto;
-        background-image: linear-gradient(to right, #ff1541, #1a2434);
+        display: none;
     }    
 
     /* ..............main................... */
