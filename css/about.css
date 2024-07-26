@@ -1,0 +1,427 @@
+body {
+    background: #f7f6ee;
+    overflow-x: hidden !important;
+}
+
+#favicon-img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+/* ..............Header.................. */
+
+.nav-bar {
+    height: 120px;
+    margin: 0;
+}
+
+.nav-bar a {
+    width: fit-content;
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+#navbarSupportedContent {
+    position: absolute;
+    background: #f7f6ee;
+    width: 100%;
+    top: 120px;
+    padding: 0px 0px 20px 90px;
+}
+
+.navbar-nav {
+    margin-right: 80px;
+}
+
+.customized-nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 250ms ease 0s;
+}
+
+.customized-nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* ..............Header-scroll.................. */
+
+#scroller {
+    display: none;
+    animation-name: fade-in;
+    animation-duration: 250ms;
+    animation-timing-function: ease-in-out;
+}
+
+#scroller .nav-bar {
+    height: 79px;
+    margin: 0;
+}
+
+#scroller #navbarSupportedContent {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    top: 0px;
+    padding: 10px 0px 15px 90px;
+}
+
+#scroller .nav-bar {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    top: 0;
+    padding: 10px 0px 15px 90px;
+}
+
+#scroller .navbar-toggler {
+    right: 35px;
+}
+
+#scroller .customized-nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(210 210 210);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 250ms ease 0s;
+}
+
+#scroller .customized-nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* ....................main................... */
+
+.top-background {
+    width: 100%;
+    background-image: url(../images/no-watermark/girl-on-tree-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-background p {
+    font-weight: 500;
+}
+
+.resume-h h2 {
+    width: fit-content;
+    color: #007769;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 4px;
+}
+
+.resume-h div {
+    height: 4px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.top-background div div h1 {
+    color: #007769;
+    font-family: "Luckiest Guy", cursive;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.6), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.top-background div div p {
+    color: #58ffeb;
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5), -1px -1px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+}
+
+.resume-p-size p {
+    font-family: "Handlee", cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.canadian-p p {
+    width: fit-content;
+}
+.canadian-p img {
+    width: 40px;
+    height: 22px;
+    margin-top: 5px;
+}
+
+/* ...................footer................... */
+
+.footer-circle {
+    width: 60px;
+    height: 60px;
+}
+
+footer i {
+    color: #e77689;
+}
+
+footer i {
+    transition: all 350ms ease 0s;
+}
+
+footer a:hover i {
+    color: #c95a6c;
+}
+
+/* .............scrollbar............ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f6ee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e6e3c9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dbd8bd;
+}
+
+/* ..................fade.............. */
+
+#fader {
+    background: #f7f6ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+@media all and (max-width:575px) {
+    #navbarSupportedContent a {
+        margin-left: -40px;
+    }
+
+    .navbar-brand {
+        width: 170px !important;
+        margin: 0% 0% 0% 5% ;
+    }
+    #scrolling-logo {
+        width: 160px;
+    }
+
+    .top-background {
+        height: 850px;
+    }
+
+    .top-background p {
+        font-size: calc(3vw + 7px);
+    }
+
+    #scroller #navbarSupportedContent {
+        top: 78px;
+    }
+
+    .resume-p-size p {
+        font-size: 22px;
+    }
+}
+
+@media all and (min-width:576px) and (max-width:767px) {
+    .navbar-brand {
+        width: 200px !important;
+        margin: 0 0 0 45px;
+    }
+    #scrolling-logo {
+        width: 180px;
+    }
+
+    .top-background {
+        height: 850px;
+    }
+
+    .top-background p {
+        font-size: calc(2.2vw + 7px);
+    }
+
+    #scroller #navbarSupportedContent {
+        top: 78px;
+    }
+
+    .resume-p-size p {
+        font-size: 23px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+    .navbar-brand {
+        width: 220px !important;
+        margin: 0 0 0 45px;
+    }
+    #scrolling-logo {
+        width: 180px;
+    }
+
+    #scroller #navbarSupportedContent {
+        top: 78px;
+    }
+
+    .top-background {
+        height: 880px;
+    }
+
+    .top-background p {
+        font-size: 22px;
+    }
+
+    .resume-h div {
+        width: 130px;
+    }
+
+    .resume-p-size p {
+        font-size: 23px;
+    }
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {
+    #navbarSupportedContent {
+        width: fit-content;
+        top: 45px;
+        right: 0;
+    }
+
+    .navbar-brand {
+        width: 20% !important;
+        margin: 10px 0 0 45px;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 160px;
+    }
+
+    .top-background {
+        height: 900px;
+    }
+
+    .top-background p {
+        font-size: 26px;
+    }
+
+    .resume-h div {
+        width: 140px;
+    }
+
+    .resume-p-size p {
+        font-size: 23px;
+    }
+}
+
+@media all and (min-width:1200px) and (max-width:1399px) {
+    #navbarSupportedContent {
+        width: fit-content;
+        top: 45px;
+        right: 0;
+    }
+
+    .navbar-brand {
+        width: 18% !important;
+        margin: 10px 0 0 45px;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 170px;
+    }
+
+    .top-background {
+        height: 920px;
+    }
+
+    .top-background p {
+        font-size: 26px;
+    }
+
+    .resume-h div {
+        width: 140px;
+    }
+
+    .resume-p-size p {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width:1400px) {
+    #navbarSupportedContent {
+        width: fit-content;
+        top: 45px;
+        right: 0;
+    }
+    .navbar-brand {
+        width: 18% !important;
+        margin: 10px 0 0 5%;
+    }
+    a:has(#scrolling-logo) {
+        margin-top: 4px !important;
+    }
+    #scrolling-logo {
+        width: 200px;
+    }
+    .top-background {
+        height: 960px;
+        background-position-y: -120px;
+    }
+
+    .top-background p {
+        font-size: 28px;
+    }
+
+    .resume-h div {
+        width: 140px;
+    }
+
+    .resume-p-size p {
+        font-size: 26px;
+    }
+}
