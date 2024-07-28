@@ -28,3 +28,4 @@ function OpenImg() {
 function CloseImg() {
     document.getElementById('frame').style.display = "none";
 }
+

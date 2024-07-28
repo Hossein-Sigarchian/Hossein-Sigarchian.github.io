@@ -3,6 +3,11 @@ body {
   overflow-x: hidden !important;
 }
 
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
 #favicon-img {
   overflow: hidden;
   border-radius: 50%;
@@ -98,61 +103,60 @@ body {
 
 /* ....................main................... */
 
-.top-background {
-  width: 100%;
-  background-image: url(../images/no-watermark/girl-on-tree-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.top-background p {
-  font-weight: 500;
-}
-
-.resume-h h2 {
+.title-h h1 {
   width: fit-content;
   color: #007769;
   font-family: "Luckiest Guy", cursive;
   letter-spacing: 4px;
 }
-
-.resume-h div {
+.title-h-line {
   height: 4px;
   width: 100px;
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.top-background div div h1 {
-  color: #007769;
-  font-family: "Luckiest Guy", cursive;
-  letter-spacing: 4px;
-  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.6),
-    -2px -2px 5px rgba(255, 255, 255, 0.5);
+.text-box {
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.text-box p {
+  width: fit-content;
 }
 
-.top-background div div p {
-  color: #58ffeb;
+.info-link {
+  color: white;
   font-family: "Handlee", cursive;
   font-weight: bold;
   letter-spacing: 2px;
-  text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5), -1px -1px 5px rgba(0, 0, 0, 0.3);
-}
-
-h3 {
-  font-family: "Handlee", cursive;
-  font-weight: bold;
-}
-.download-link {
-  display: block;
-  width: fit-content;
   text-decoration: none;
-  color: white;
+  padding: 15px;
   background-color: #007769;
-  font-weight: bold;
+}
+.courses-h {
+  width: fit-content;
+  color: #007769;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 4px;
+}
+.courses {
   font-family: "Handlee", cursive;
   letter-spacing: 1px;
+  border: 4px solid #007769;
+  text-align: center;
+  cursor: context-menu;
 }
-
+.courses:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 300ms ease 0s;
+}
+.courses h3 {
+  color: #007769;
+  transition: all 300ms ease 0s;
+}
+.courses:hover h3 {
+  color: #10d6bf;
+}
 /* ...................footer................... */
 
 .footer-circle {
@@ -251,11 +255,6 @@ footer a:hover i {
   #scroller #navbarSupportedContent {
     top: 79px;
   }
-  .download-link {
-    padding: 14px;
-    border-radius: 7px;
-    margin: 45px auto 35px;
-  }
 }
 
 @media all and (min-width: 576px) and (max-width: 767px) {
@@ -276,11 +275,6 @@ footer a:hover i {
   #scroller #navbarSupportedContent {
     top: 79px;
   }
-  .download-link {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 50px auto 35px;
-  }
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -300,11 +294,6 @@ footer a:hover i {
   }
   .top-background p {
     font-size: 22px;
-  }
-  .download-link {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 130px auto;
   }
 }
 
@@ -331,11 +320,6 @@ footer a:hover i {
   .top-background p {
     font-size: 26px;
   }
-  .download-link {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 150px auto;
-  }
 }
 
 @media all and (min-width: 1200px) and (max-width: 1399px) {
@@ -361,11 +345,6 @@ footer a:hover i {
   .top-background p {
     font-size: 26px;
   }
-  .download-link {
-    padding: 20px;
-    border-radius: 15px;
-    margin: 180px auto;
-  }
 }
 
 @media all and (min-width: 1400px) {
@@ -390,10 +369,5 @@ footer a:hover i {
   }
   .top-background p {
     font-size: 28px;
-  }
-  .download-link {
-    padding: 25px;
-    border-radius: 15px;
-    margin: 45% auto;
   }
 }
