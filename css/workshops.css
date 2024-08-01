@@ -116,6 +116,7 @@ header {
 }
 
 .text-box {
+  width: 85%;
   font-family: "Handlee", cursive;
   font-weight: bold;
   letter-spacing: 1px;
@@ -132,6 +133,11 @@ header {
   text-decoration: none;
   padding: 15px;
   background-color: #007769;
+  transition: all 250ms ease 0s;
+}
+
+.info-link:hover {
+  background-color: #058b7c;
 }
 
 .text-box-2 {
@@ -238,7 +244,7 @@ footer a:hover i {
     top: 79px;
   }
   .img-parent img {
-  width: 75%;
+    width: 75%;
   }
 }
 
@@ -261,7 +267,7 @@ footer a:hover i {
     top: 79px;
   }
   .img-parent img {
-  width: 60%;
+    width: 60%;
   }
 }
 
@@ -284,7 +290,7 @@ footer a:hover i {
     font-size: 22px;
   }
   .img-parent img {
-  width: 50%;
+    width: 50%;
   }
 }
 
@@ -312,7 +318,7 @@ footer a:hover i {
     font-size: 26px;
   }
   .img-parent img {
-  width: 35%;
+    width: 35%;
   }
 }
 
@@ -340,7 +346,7 @@ footer a:hover i {
     font-size: 26px;
   }
   .img-parent img {
-  width: 30%;
+    width: 30%;
   }
 }
 
@@ -368,6 +374,6 @@ footer a:hover i {
     font-size: 28px;
   }
   .img-parent img {
-  width: 25%;
+    width: 25%;
   }
 }
